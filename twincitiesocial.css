@@ -34,49 +34,12 @@
 /* this hides blockquoted text in the sidebar, which will allow us to leave notes & instructions for fellow mods without having them appear */
 .side div blockquote {
     display: none
-    }
-
-/* Announcement Sticky Note (Shows when logged in), stolen from /r/pics and r/netsec (disabled to implement new header bar)*/
-/* If you want to change the info, just modify what is in the content field */
-/*
-body > .content > .sharelink ~ .sitetable:before {
-    content: "Upcoming Meetups (see sidebar for clickable links): D&D 1/6 (http://redd.it/evfvh), Bar Meetup 1/7 (http://redd.it/ety6q), Coffee Meetup 1/9 (thread not posted yet), Bowling 1/11 (http://redd.it/evckc)";
-    background-image: url(%%t5-2qh0u-11%%);
-    background-repeat: no-repeat;
-    background-position: left center;
-    font-family: verdana, sans-serif;
-    font-size: 16px;
-    color: #FF4500;
-    text-align: left;
-    padding: 10px 0px 10px 40px;
-    margin: 15px;
-    display: block;
-    width: 70%;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px
-} */
+}
 
 /* where the number of subscribers appears in the sidebar, this replaces the default wording of "readers" to something customized, idea stolen wholesale from r/bradford */
 div.titlebox span.word {
     display: none
-    }
+}
 div.titlebox span.number:after {
     content: " socialites"
-    }
-
-/* Not sure what these are for */
-
-/* div.id-t1_c0j3388 div.usertext-body strong { color: blue; font-weight: normal; }
-
-a:hover {
-	cursor: url(%%cur117%%), default; 
-	color:#FF6600;
-} */
-
-/* Work in progress.
-body div.titlebox a.remove
-{
-	content: url(%%tcs-unsubscribe%%);
-	padding: -2px -8px;
 }
-*/
