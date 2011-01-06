@@ -1,52 +1,35 @@
 /* This concept was originally developed by redditor jamt9000 */
 /* this positions new tabs up top, using text from the sidebar (specifically, ordered links) */
 .titlebox .usertext-body .md ol li a {
-    background-color: #ff4500;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 3px;
-    /* Doesn't float right if not individually stated */
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 3px
-    }
-.titlebox .usertext-body .md ol li a:hover {
-    border-left-color: #000000;
-    border-right-color: #000000;
-    border-top-color: #000000;
-    border-bottom-color: #000000;
-    background-color: #8A8A33
-    }
-.pagename {
-    font-size: 12pt
-    }
-.titlebox form {
-    position: static
-    }
-.titlebox .usertext-body .md ol {
-    list-style: none;
-    position: absolute;
-    top: 60px;
-    left: 211px;
-    z-index: 200;
-    margin: 0;
-    padding: 0;
-    display: table
-    }
-.titlebox .usertext-body .md ol li {
-    display: inline;
-    margin: 0 3px
-    }
-.titlebox .usertext-body .md ol li a {
+    border: 1px solid #fff;
     background-color: #7575CC;
-    padding: 2px 6px 0;
+    padding: 2px 6px 2px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: small
-    }
+    font-size: small;
+}
+.titlebox .usertext-body .md ol li a:hover {
+    border-color: #000000;
+    background-color: #8A8A33;
+}
+.titlebox form {
+    position: static;
+}
+.titlebox .usertext-body .md ol {
+    list-style: none;
+    position: absolute;
+    top: 55px;
+    left: 209px;
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+    display: table;
+}
+.titlebox .usertext-body .md ol li {
+    display: inline;
+    margin: 0 3px;
+}
 
 /* this hides blockquoted text in the sidebar, which will allow us to leave notes & instructions for fellow mods without having them appear */
 .side div blockquote {
