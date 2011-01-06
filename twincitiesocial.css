@@ -1,0 +1,99 @@
+/* This concept was originally developed by redditor jamt9000 */
+/* this positions new tabs up top, using text from the sidebar (specifically, ordered links) */
+.titlebox .usertext-body .md ol li a {
+    background-color: #ff4500;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    /* Doesn't float right if not individually stated */
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px
+    }
+.titlebox .usertext-body .md ol li a:hover {
+    border-left-color: #000000;
+    border-right-color: #000000;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
+    background-color: #8A8A33
+    }
+.pagename {
+    font-size: 12pt
+    }
+.titlebox form {
+    position: static
+    }
+.titlebox .usertext-body .md ol {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 211px;
+    z-index: 200;
+    margin: 0;
+    padding: 0;
+    display: table
+    }
+.titlebox .usertext-body .md ol li {
+    display: inline;
+    margin: 0 3px
+    }
+.titlebox .usertext-body .md ol li a {
+    background-color: #7575CC;
+    padding: 2px 6px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small
+    }
+
+/* this hides blockquoted text in the sidebar, which will allow us to leave notes & instructions for fellow mods without having them appear */
+.side div blockquote {
+    display: none
+    }
+
+/* Announcement Sticky Note (Shows when logged in), stolen from /r/pics and r/netsec (disabled to implement new header bar)*/
+/* If you want to change the info, just modify what is in the content field */
+/*
+body > .content > .sharelink ~ .sitetable:before {
+    content: "Upcoming Meetups (see sidebar for clickable links): D&D 1/6 (http://redd.it/evfvh), Bar Meetup 1/7 (http://redd.it/ety6q), Coffee Meetup 1/9 (thread not posted yet), Bowling 1/11 (http://redd.it/evckc)";
+    background-image: url(%%t5-2qh0u-11%%);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-family: verdana, sans-serif;
+    font-size: 16px;
+    color: #FF4500;
+    text-align: left;
+    padding: 10px 0px 10px 40px;
+    margin: 15px;
+    display: block;
+    width: 70%;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px
+} */
+
+/* where the number of subscribers appears in the sidebar, this replaces the default wording of "readers" to something customized, idea stolen wholesale from r/bradford */
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox span.number:after {
+    content: " socialites"
+    }
+
+/* Not sure what these are for */
+
+/* div.id-t1_c0j3388 div.usertext-body strong { color: blue; font-weight: normal; }
+
+a:hover {
+	cursor: url(%%cur117%%), default; 
+	color:#FF6600;
+} */
+
+/* Work in progress.
+body div.titlebox a.remove
+{
+	content: url(%%tcs-unsubscribe%%);
+	padding: -2px -8px;
+}
+*/
