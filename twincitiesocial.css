@@ -1,6 +1,8 @@
 /* This concept was originally developed by redditor jamt9000 */
 /* this positions new tabs up top, using text from the sidebar (specifically, ordered links) */
-.titlebox .usertext-body .md ol li a {
+/* CSS common to both rows of stickies */
+.titlebox .usertext-body .md ol li a,
+.titlebox .usertext-body .md ul li a {
     border: 1px solid #fff;
     background-color: #7575CC;
     padding: 2px 6px 2px;
@@ -9,26 +11,38 @@
     font-weight: bold;
     font-size: small;
 }
-.titlebox .usertext-body .md ol li a:hover {
+.titlebox .usertext-body .md ol li a:hover,
+.titlebox .usertext-body .md ul li a:hover {
     border-color: #000000;
     background-color: #8A8A33;
 }
 .titlebox form {
     position: static;
 }
-.titlebox .usertext-body .md ol {
+.titlebox .usertext-body .md ol,
+.titlebox .usertext-body .md ul {
     list-style: none;
     position: absolute;
-    top: 55px;
-    left: 209px;
     z-index: 200;
     margin: 0;
     padding: 0;
     display: table;
 }
-.titlebox .usertext-body .md ol li {
+.titlebox .usertext-body .md ol li,
+.titlebox .usertext-body .md ul li {
     display: inline;
     margin: 0 3px;
+}
+
+/* Code that differs between the two rows */
+.titlebox .usertext-body .md ul {
+    top: 28px;
+    left: 209px;
+}
+
+.titlebox .usertext-body .md ol {
+    top: 55px;
+    left: 339px;
 }
 
 /* this hides blockquoted text in the sidebar, which will allow us to leave notes & instructions for fellow mods without having them appear */
